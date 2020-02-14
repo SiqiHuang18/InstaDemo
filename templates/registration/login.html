@@ -1,0 +1,13 @@
+{%block content%}
+
+<h1>login</h1>
+<form action="" method="post">
+     <!--保护form -->
+    {% csrf_token %}
+    <!-- form as paragraph-->
+    {{ form.as_p }}
+    <button type="submit">Login</button>
+</form>
+
+
+{% endblock content %}
