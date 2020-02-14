@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="deec6b91-465b-465c-a92e-7ea9afe274d2" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Procfile" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/InstaDemo/__init__.py" afterPath="$PROJECT_DIR$/InstaSiqi/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/InstaDemo/asgi.py" afterPath="$PROJECT_DIR$/InstaSiqi/asgi.py" />
-      <change beforePath="$PROJECT_DIR$/InstaDemo/settings.py" afterPath="$PROJECT_DIR$/InstaSiqi/settings.py" />
-      <change beforePath="$PROJECT_DIR$/InstaDemo/urls.py" afterPath="$PROJECT_DIR$/InstaSiqi/urls.py" />
-      <change beforePath="$PROJECT_DIR$/InstaDemo/wsgi.py" afterPath="$PROJECT_DIR$/InstaSiqi/wsgi.py" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" afterPath="$PROJECT_DIR$/Pipfile" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" afterPath="$PROJECT_DIR$/Pipfile.lock" />
+      <change beforePath="$PROJECT_DIR$/InstaSiqi/settings.py" afterPath="$PROJECT_DIR$/InstaSiqi/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -104,8 +96,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/InstaSiqi/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <state relative-caret-position="376">
+              <caret line="131" column="35" lean-forward="true" selection-start-line="131" selection-start-column="35" selection-end-line="131" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -178,8 +170,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="12" />
-    <option name="y" value="670" />
+    <option name="x" value="86" />
+    <option name="y" value="135" />
     <option name="width" value="1280" />
     <option name="height" value="588" />
   </component>
@@ -256,7 +248,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="12" y="670" width="1280" height="588" extended-state="0" />
+    <frame x="86" y="135" width="1280" height="588" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24609375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -598,8 +590,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/InstaSiqi/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        <state relative-caret-position="376">
+          <caret line="131" column="35" lean-forward="true" selection-start-line="131" selection-start-column="35" selection-end-line="131" selection-end-column="35" />
           <folding />
         </state>
       </provider>
