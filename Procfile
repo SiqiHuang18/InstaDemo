@@ -1,0 +1,1 @@
+web: gunicorn InstaSiqi.wsgi --log-file -
