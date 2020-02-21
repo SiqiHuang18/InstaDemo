@@ -8,20 +8,24 @@
     {% for post in object_list %}
         <div class="row">
             <div class="card view-update {{ post.pk }}">
-                <!--<div class="card__panel-head">-->
-                    <!--<div class="poster__info">-->
-                        <!--<a href="{% url 'profile' post.author.pk %}" class="poster__name">-->
-                            <!--{% if post.author.profile_pic %}-->
-                                <!--<img class="poster__profilepic" src="{{ post.author.profile_pic.url }}">-->
-                            <!--{% endif %}-->
-                            <!--{{ post.author.username }}-->
-                        <!--</a>-->
-                        <!--<span class="poster__timestamp">-->
-                            <!--{{ post.posted_on|timesince }}-->
-                        <!--</span>-->
-                    <!--</div>-->
-                <!--</div>-->
+
+                <div class="card__panel-head">
+                    <div class="poster__info">
+                        <a href="{% url 'profile' post.author.pk %}" class="poster__name">
+                            {% if post.author.profile_pic %}
+                                <img class="poster__profilepic" src="{{ post.author.profile_pic.url }}">
+                            {% endif %}
+                            {{ post.author.username }}
+                        </a>
+                        <span class="poster__timestamp">
+                            {{ post.posted_on|timesince }}
+                        </span>
+                    </div>
+                </div>
+
+
                 <a href="{% url 'post_detail' post.pk %}">
+                    {{ post.title}}
                     <img class="card__main-image" src="/{{ post.image}}">
                 <!--</a>-->
                 <!--<div class="card__panel-body">-->
