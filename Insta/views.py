@@ -16,10 +16,10 @@ from Insta.forms import CustomUserCreationForm
 class HelloWorld(TemplateView):
     template_name = 'test.html'
 
-class PostsView(ListView):
+class PostsView(LoginRequiredMixin,ListView):
     model = Post
     template_name = 'index.html'
-
+    login_url = "login"
     # overwrite get_queryset 只显示follow user的post
 
     # def get_queryset(self):
@@ -30,14 +30,23 @@ class PostsView(ListView):
     #     return Post.objects.filter(author__in=following)
 
 
-class PostDetailView(DetailView):
+class PostDetailView(LoginRequiredMixin, DetailView):
     model = Post
     template_name = 'post_detail.html'
 
-class UserDetailView(DetailView):
+class UserDetailView(LoginRequiredMixin, DetailView):
     model = InstaUser
     template_name = 'user_detail.html'
     login_url = 'login'
+
+class ExploreView(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'explore.html'
+    login_url = 'login'
+
+    def get_queryset(self):
+        return Post.objects.all().order_by('-posted_on')[:20]
+
 
 class EditProfile(LoginRequiredMixin, UpdateView):
     model = InstaUser
