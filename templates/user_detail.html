@@ -18,8 +18,9 @@
                     <h1 class="username">{{ object.username }}</h1>
                     <!--user 和 点的人 是一个人-->
                     {% if user == object %}
-                        <!--edit profile function 先去掉-->
-                        <button class="edit-profile">Edit Profile</button>
+                        <a class="edit-desktop" href="{% url 'edit_profile' object.pk %}">
+                            <button class="edit-profile">Edit Profile</button>
+                        </a>
 
                     {% else %}
                         <!--is_following from custom_tags-->
